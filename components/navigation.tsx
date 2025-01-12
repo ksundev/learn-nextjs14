@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Navigation() {
   const path = usePathname();
-  console.log(path);
+  // console.log(path);
   const [count, setCount] = React.useState(0);
   return (
     <nav>
