@@ -31,3 +31,4 @@ metadata는 중첩보다는 병합(merge)된다. page나 layout에만 만들 수
 ### Data Fetching 방법
 - `sync` 함수로 만든 뒤 `await`를 걸어 data를 `fetch`할 동안 기다리게 만든다.
 - data를 순차적으로 받는 것이 아닌 동시에 받게 하기 위해선(parallel processing) `Promise.all`을 사용할 수 있다.
+- `Suspense`를 활용하면 페이지를 즉시 보여준 뒤 로딩이 되면 띄워주는 `component`를 만들 수 있다. 로딩되는 동안에는 `fallback`을 통해 대신하여 보여줄 요소를 지정해줄 수 있다.
