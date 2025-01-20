@@ -25,4 +25,9 @@ Next.js 14는 개발자 경험을 향상시키고, 성능을 최적화하며, �
 - app이라는 폴더 밑에 있는 page.tsx를 만들어야 한다. (파일명 중요!)
 - not-found.tsx 파일을 만들 수 있다.
 - layout.tsx는 중첩이 된다. 자식 폴더에 있는 모든 page.tsx에 적용 된다.
-- metadata는 중첩보다는 병합(merge)된다. page나 layout에만 만들 수 있으며 
+metadata는 중첩보다는 병합(merge)된다. page나 layout에만 만들 수 있으며 SEO 및 소셜 미디어 공유를 위한 메타 태그를 설정할 수 있다.
+- loading.tsx를 만들어 로딩화면을 구성할 수 있다.
+
+### Data Fetching 방법
+- `sync` 함수로 만든 뒤 `await`를 걸어 data를 `fetch`할 동안 기다리게 만든다.
+- data를 순차적으로 받는 것이 아닌 동시에 받게 하기 위해선(parallel processing) `Promise.all`을 사용할 수 있다.
