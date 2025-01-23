@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.container h1,
+.container h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.container p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+}
+
+.container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.container li {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 80%;
+  max-width: 1000px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.bottomLayout {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.githubLink {
+  color: rgb(68, 151, 196);
+}
