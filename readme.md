@@ -27,6 +27,7 @@ Next.js 14는 개발자 경험을 향상시키고, 성능을 최적화하며, �
 - layout.tsx는 중첩이 된다. 자식 폴더에 있는 모든 page.tsx에 적용 된다.
 metadata는 중첩보다는 병합(merge)된다. page나 layout에만 만들 수 있으며 SEO 및 소셜 미디어 공유를 위한 메타 태그를 설정할 수 있다.
 - loading.tsx를 만들어 로딩화면을 구성할 수 있다.
+- generateMetadata({ params: { id } }: IParams) 를 통해 동적인 메타정보를 부여할 수도 있다.
 
 ### Data Fetching 방법
 - `sync` 함수로 만든 뒤 `await`를 걸어 data를 `fetch`할 동안 기다리게 만든다.
